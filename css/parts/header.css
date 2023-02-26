@@ -1,0 +1,117 @@
+.header{
+    background-image: url(/img/header1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 900px;
+}
+
+.header_body{
+    position: relative;
+    z-index: 2;
+    padding: 400px 0 0 0;
+    height: 900px;
+}
+
+.header_search{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.header_search-bar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: antiquewhite;
+    padding: 15px 20px;
+    border: 2px solid white;
+    background-color: rgb(58 58 58 / 0.38);
+    width: 55%;
+    outline:none;
+    
+}
+
+.header_menu{
+    display: none;
+}
+
+.header_list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.header_link{
+    padding-left: 20px;
+}
+
+@media (max-width: 768px){
+    .header_menu{
+        position: fixed;
+        display: flex;
+        top: 0;
+        left: -200%;
+        width: 350px;
+        height: 100%;
+        background-color:rgb(255, 255, 255);
+        z-index: 999;
+        padding: 70px 10px 20px 10px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .header_menu.active{
+        left: 0;
+    }
+
+    .header_list li{
+        margin: 0 0 20px 0;
+    }
+
+    .header_list{
+        display: block;
+        color:black;
+        font-weight: 700;
+    }
+
+
+    .header_link:hover{
+        background-color:black;
+        color:white;
+        border-radius: 4px;
+        padding: 8px 20px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .header_search-bar {
+        font-weight: 700;
+        font-size: 15px;
+        width: 100%;
+        position:relative;
+        background-color:white;
+        color:black;
+        padding: 10px 15px;
+        border: 2px solid white;
+
+    }
+
+    .header_search{
+        position:absolute;
+        top:0;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+}
+
+
+

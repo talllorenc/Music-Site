@@ -1,0 +1,249 @@
+.licensing_page{
+    background-image:url(/img/header2.jpg);
+    min-height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.licensing_cards{
+    margin-top: 50px;
+}
+
+.licensing_page h2{
+    text-align: center;
+    margin: 0;
+    margin-top: 70px;
+    font-weight: 700;
+}
+
+
+/* CARD TOP */
+
+.top_text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    min-width: 1300px;
+}
+
+.card_top{
+    background: #757575;
+    height: 200px;
+    width: 278px;
+    margin: 0 0 0 20px;
+    text-align: center;
+}
+
+.card_top:last-child{
+    margin-right: 20px;
+}
+
+.card_top-text{
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-size: 22px;
+}
+
+.card_top-text:first-child{
+    margin-top: 30px;
+}
+
+.card_top span:nth-child(3){
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.card_top-text:last-child{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* CARD MIDDLE */
+
+.middle_text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    min-width: 1300px;
+}
+
+.card_middle{
+    background: #ffffff;
+    height: 256px;
+    width: 278px;
+    margin: 0 0 0 20px;
+}
+
+.card_middle:last-child{
+    margin-right: 20px;
+    height: 100px;
+}
+
+.card_middle-text{
+    color:#333333;
+    margin-left: 5px;
+}
+
+.iconify{
+    color:#757575;
+    margin-left: 0.5em;
+}
+
+.string{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+}
+
+.middle_btn{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    margin-top: 15px;
+}
+
+.middle_btn:last-child{
+    margin-top: 25px; 
+}
+
+.middle_btn-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 8px 24px;
+    margin: 6px 8px;
+    transition: all 300ms ease-in-out;
+}
+
+.middle_btn-btn:hover{
+    background-color:#000000;
+    color:antiquewhite;
+}
+
+/* CARD BOTTOM */
+
+.bottom_text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    position: relative;
+    min-width: 1300px;
+}
+
+.card_bottom{
+    background: #757575;
+    height: 142px;
+    width: 278px;
+    margin: 0 0 0 20px;
+}
+
+.card_bottom:last-child{
+    margin-right: 20px;
+    visibility: hidden;
+}
+
+.card_bottom-text1{
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.card_bottom-text2{
+    color:#ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.string_bottom{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+
+
+.pop_up{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+
+.pop_up.active{
+    display: block;
+}
+
+.pop_up-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up-body{
+    margin: auto;
+    width: 75%;
+    height: 400px;
+    background-color:rgb(255, 255, 255);
+    position: relative;
+}
+
+.pop_up-title{
+    background-color:#858585;
+    color:#ffffff;
+    font-size: 24px;
+    padding: 25px 0;
+   padding-left: 20px;
+}
+
+.pop_up-text{
+    color:#000000;
+    line-height: 25px;
+    margin: 40px 0 10px 20px;
+}
+
+.pop_up-close{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 960px){
+.licensing_cards{
+    overflow-x: auto;
+}
+    
+}
+
+
+
+
+@media (max-width: 760px){
+    .pop_up-body{
+        overflow:scroll;
+        width: 100%;
+        height: 100%;
+    }
+}
